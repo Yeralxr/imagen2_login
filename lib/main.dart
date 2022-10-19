@@ -56,15 +56,13 @@ class MyApp extends StatelessWidget {
               ),
               elevation: 10.0,
               child: ListTile(
-                title: Text("+51 924392519"),
-                subtitle: Text("Telefono"),
-                leading: Icon(
-                  Icons.phone,
-                  color: Colors.indigo,
-                ),
-                trailing: Icon(
-                  Icons.check_circle_outline,
-                  color: Colors.indigo,
+                title: Text("Email Adress"),
+                subtitle: ListTile(
+                  title: Text("FiorelaChavez@hotmail.com"),
+                  leading: Icon(
+                    Icons.mail,
+                    color: Colors.indigo,
+                  ),
                 ),
               ),
             ),
@@ -76,15 +74,17 @@ class MyApp extends StatelessWidget {
               ),
               elevation: 10.0,
               child: ListTile(
-                title: Text("FiorelaChavez@hotmail.com"),
-                subtitle: Text("Correo Electronico"),
-                leading: Icon(
-                  Icons.mail,
-                  color: Colors.indigo,
-                ),
-                trailing: Icon(
-                  Icons.check_circle_outline,
-                  color: Colors.indigo,
+                title: Text("Password"),
+                subtitle: ListTile(
+                  title: Text("............"),
+                  leading: Icon(
+                    Icons.lock,
+                    color: Colors.indigo,
+                  ),
+                  trailing: Icon(
+                    Icons.remove_red_eye_sharp,
+                    color: Colors.indigo,
+                  ),
                 ),
               ),
             ),
