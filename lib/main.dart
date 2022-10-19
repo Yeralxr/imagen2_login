@@ -90,28 +90,32 @@ class MyApp extends StatelessWidget {
             ),
             Card(),
             Card(),
-            Row(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: [
-                Image.asset(
-                  "assets/images/messenger.png",
-                  height: 60.0,
+            Card(
+              color: Color.fromARGB(255, 59, 100, 187),
+              margin: EdgeInsets.symmetric(horizontal: 30.0, vertical: 10.0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              elevation: 10.0,
+              child: ListTile(
+                title: Text(
+                  "Login",
+                  textAlign: TextAlign.center,
+                  style: TextStyle(fontWeight: FontWeight.bold, fontSize: 20),
                 ),
-                SizedBox(
-                  width: 30.0,
-                ),
-                Image.asset(
-                  "assets/images/messenger.png",
-                  height: 60.0,
-                ),
-                SizedBox(
-                  width: 30.0,
-                ),
-                Image.asset(
-                  "assets/images/messenger.png",
-                  height: 60.0,
-                ),
-              ],
+              ),
+            ),
+            Card(
+              color: Color.fromARGB(255, 195, 214, 232),
+              margin: EdgeInsets.symmetric(horizontal: 2.0, vertical: 10.0),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(1),
+              ),
+              elevation: 1.0,
+              child: ListTile(
+                leading: Text("Signup"),
+                trailing: Text("Forgot Password"),
+              ),
             ),
           ],
         ),
